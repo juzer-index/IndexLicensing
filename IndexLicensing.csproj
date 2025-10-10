@@ -24,20 +24,24 @@
     <PackageReference Include="System.IO" Version="4.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>..\..\..\..\..\..\New folder\IITLicenseKey\IndexLicenseKeyGenerator\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Standard.Licensing">
-      <HintPath>..\..\..\SystemSupportFile\Standard.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <HintPath>..\..\..\SystemSupportFile\System.Windows.Forms.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+
 
   <ItemGroup>
     <Folder Include="wwwroot\Downloads\" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>dlls\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Standard.Licensing">
+      <HintPath>dlls\Standard.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>dlls\System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
