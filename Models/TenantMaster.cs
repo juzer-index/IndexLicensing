@@ -14,5 +14,7 @@ namespace IndexInfo.Models
         public string TenantPhoneNumber { get; set; }
         public int Active { get; set; }
         public DateTime? ExpiredOn { get; set; }
+        public bool IsDefault { get; set; }   // <-- must exist because SQL requires it
+
     }
 }

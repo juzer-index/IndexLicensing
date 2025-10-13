@@ -17,6 +17,7 @@ builder.Services.AddRazorPages().AddNToastNotifyNoty(new NotyOptions
 });
 
 var app = builder.Build();
+app.UseStaticFiles(); // before app.UseRouting()
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

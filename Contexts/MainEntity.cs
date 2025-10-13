@@ -14,6 +14,8 @@ namespace IndexInfo.Contexts
         public DbSet<License> licenses { get; set; }
         public DbSet<CompanyMaster> companyMasters { get; set; }
         public DbSet<TenantMaster> tenantMasters { get; set; }
+        public DbSet<TenantConfig> tenantConfigs { get; set; }
+
         public DbSet<TenantCompanyMapping> tenantCompanyMappings { get; set; }
         
 
