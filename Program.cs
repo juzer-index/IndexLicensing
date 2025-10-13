@@ -11,7 +11,7 @@ var connectionString =
       Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
     ?? builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection (env var or appsettings).");
-Console.WriteLine($"Using connection string: {connectionString}");
+
 
 builder.Services.AddDbContext<MainEntity>(x => x.UseSqlServer(connectionString));
 
