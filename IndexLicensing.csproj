@@ -44,4 +44,18 @@
     <Folder Include="wwwroot\Downloads\" />
   </ItemGroup>
 
+
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>dlls\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Standard.Licensing">
+      <HintPath>dlls\Standard.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>dlls\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

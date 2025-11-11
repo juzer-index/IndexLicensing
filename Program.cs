@@ -4,9 +4,15 @@ using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Configuration.AddEnvironmentVariables();
+
+// Read from Configuration, then fall back to raw env var, then guard
+var connectionString =
+      Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
+    ?? builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection (env var or appsettings).");
+
+
 builder.Services.AddDbContext<MainEntity>(x => x.UseSqlServer(connectionString));
 
 
