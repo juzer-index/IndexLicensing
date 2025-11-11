@@ -21,10 +21,14 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NToastNotify" Version="8.0.0" />
     <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="Standard.Licensing" Version="1.2.1" />
     <PackageReference Include="System.IO" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\AutoCAD 2024\AdWindows.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
       <HintPath>..\..\..\..\..\..\New folder\IITLicenseKey\IndexLicenseKeyGenerator\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -32,7 +36,7 @@
       <HintPath>..\..\..\SystemSupportFile\Standard.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <HintPath>..\..\..\SystemSupportFile\System.Windows.Forms.dll</HintPath>
+      <HintPath>..\..\..\Downloads\System.Windows.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
 

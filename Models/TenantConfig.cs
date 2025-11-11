@@ -16,7 +16,7 @@ namespace IndexInfo.Models
         public string AppPoolHost { get; set; } = string.Empty;
 
         [Required]
-        public string AppPoolInstance { get; set; } = string.Empty;
+        public string AppPoolInstance { get ; set ; } = string.Empty;
 
         public string? APIKey { get; set; }
 
